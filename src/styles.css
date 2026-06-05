@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora&family=Inter&family=JetBrains+Mono&display=swap");
+body {
+  margin: 0;
+  background: #d9d9ce;
+  color: #111;
+}
+* {
+  box-sizing: border-box;
+  border-radius: 0;
+}
+.page {
+  max-width: 1280px;
+  margin: auto;
+  padding: 24px;
+}
+.masthead {
+  border-top: 4px solid #111;
+  border-bottom: 4px solid #111;
+  padding: 14px 0;
+}
+.edition,
+.footer,
+.card-title,
+.figure,
+.placeholder {
+  font-family: "JetBrains Mono", monospace;
+}
+.gallery {
+  display: grid;
+  gap: 24px;
+  margin-top: 24px;
+}
+.card {
+  border: 1px solid #111;
+  background: #fff;
+}
+.card:hover {
+  box-shadow: 4px 4px 0 #111;
+  transform: translate(-2px, -2px);
+}
+.card-title {
+  padding: 12px;
+  border-bottom: 1px solid #111;
+  text-transform: uppercase;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+.meta {
+  padding: 20px;
+  border-right: 1px solid #111;
+}
+.viewer {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.figure {
+  color: #cc0000;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(4rem, 10vw, 8rem);
+  margin: 10px 0;
+}
+.footer {
+  border-top: 4px solid #111;
+  padding-top: 16px;
+  margin-top: 24px;
+}
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .meta {
+    border-right: none;
+    border-bottom: 1px solid #111;
+  }
+}
