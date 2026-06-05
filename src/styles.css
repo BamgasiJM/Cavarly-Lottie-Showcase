@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora&family=Inter&family=JetBrains+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora&family=Inter&family=JetBrains+Mono&family=Gothic+A1:wght@500&display=swap");
 body {
   margin: 0;
   background: #d9d9ce;
@@ -21,7 +22,6 @@ body {
 .edition,
 .footer,
 .card-title,
-.figure,
 .placeholder {
   font-family: "JetBrains Mono", monospace;
 }
@@ -47,9 +47,15 @@ body {
   display: grid;
   grid-template-columns: 5fr 7fr;
 }
+/* 컨테이너 자체의 스타일(padding, border)을 담당 */
 .meta {
   padding: 20px;
   border-right: 1px solid #111;
+}
+/*  그 안의 <p> 태그에만 폰트를 추가로 지정 */
+.meta p {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 500;
 }
 .viewer {
   min-height: 500px;
@@ -60,6 +66,8 @@ body {
 }
 .figure {
   color: #cc0000;
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
 }
 h1 {
   font-family: "Playfair Display", serif;
